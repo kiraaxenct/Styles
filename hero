@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="image">
+        <img src="gambar.jpg" alt="Gambar Lima Rasa">
+    </div>
+    <div class="text">
+        <h1>Lima Rasa</h1>
+        <p>Rasakan sensasi berkendara dengan mobil terbaik dan nikmati pengalaman yang tak terlupakan.</p>
+        <button>Pesan Sekarang</button>
+    </div>
+</div>
