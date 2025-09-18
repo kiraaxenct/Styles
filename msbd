@@ -1,0 +1,30 @@
+CREATE DATABASE Akademik;
+USE Akademik;
+
+CREATE TABLE Mata_Kuliah (
+  kode_mk VARCHAR(10) PRIMARY KEY,
+  nama_mk VARCHAR(25),
+  sks INT
+);
+
+CREATE TABLE Mahasiswa (
+  nim VARCHAR(10) PRIMARY KEY,
+  nama VARCHAR(25),
+  program_studi VARCHAR(25)
+);
+
+ALTER TABLE Mahasiswa
+ADD tempat_lahir VARCHAR(15),
+ADD tanggal_lahir DATE;
+
+INSERT INTO Mahasiswa (nim, nama, program_studi, tempat_lahir, tanggal_lahir) VALUES
+('e040325040', 'Son Ye-jin', 'sistem_informasi', 'Korea Selatan', '1982-01-11'),
+('e040325050', 'Park Shin-ye', 'sistem_informasi', 'Korea Selatan', '1990-06-22'),
+('e040325030', 'Kim So-hyun', 'sistem_informasi', 'Korea Selatan', '1988-02-16'),
+('e040325021', 'Lee Ji-eun', 'sistem_informasi', 'Korea Selatan', '1993-05-16'),
+('e040325053', 'M Reihan Nafis', 'sistem_informasi', 'Banjarmasin', '2006-12-24');
+
+INSERT INTO Mata_Kuliah (kode_mk, nama_mk, sks) VALUES
+('e04Z5103', 'Pengantar Teknologi Informasi', 2),
+('e04Z5104', 'Aplikasi Pengolah Kata', 3),
+('e04Z5105', 'Algoritma dan Pemrograman', 3);
