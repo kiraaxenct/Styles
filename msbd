@@ -31,5 +31,6 @@ INSERT INTO Mata_Kuliah (kode_mk, nama_mk, sks) VALUES
 
 
 
-foreign key (nim) references krs (nim));
+foreign key (nim) references mahasiswa (nim));
+foreign key (no_krs) references krs (no_krs));
 foreign key (kode_mk) references mata_kuliah (kode_mk));
