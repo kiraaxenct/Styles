@@ -28,3 +28,8 @@ INSERT INTO Mata_Kuliah (kode_mk, nama_mk, sks) VALUES
 ('e04Z5103', 'Pengantar Teknologi Informasi', 2),
 ('e04Z5104', 'Aplikasi Pengolah Kata', 3),
 ('e04Z5105', 'Algoritma dan Pemrograman', 3);
+
+
+
+foreign key (nim) references krs (nim));
+foreign key (kode_mk) references mata_kuliah (kode_mk));
